@@ -12,8 +12,8 @@
                 <h2>Visitor Information</h2>
                   {{ Form::open(array('action' => 'HomeController@getContact')) }}                
                 <div class="form-group">
-                   {{Form::label('subject', 'Subject')}}
-                   {{Form::text('subject', null, array('class' => 'name', 'placeholder' => 'Subject', 'class'=>'form-control'))}}
+                   
+                   {{Form::hidden('subject', 'Visitor Informtion', array('class' => 'name', 'placeholder' => 'Subject', 'class'=>'form-control'))}}
                 </div>  
                 <div class="form-group">
                    {{Form::label('from', 'Full name')}}
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                    {{Form::label('budget', 'Budget in Dollars')}}
-                   {{Form::text('budger', null, array('class' => 'name', 'placeholder' => 'Budget', 'class'=>'form-control'))}}
+                   {{Form::text('budget', null, array('class' => 'name', 'placeholder' => 'Budget', 'class'=>'form-control'))}}
                 </div>
                 <div class="form-group">
                    {{Form::label('address', 'Address')}}
