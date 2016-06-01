@@ -15,3 +15,6 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/homepage', 'HomeController@homePage');
+Route::post('/homepage', 'HomeController@getContact');
